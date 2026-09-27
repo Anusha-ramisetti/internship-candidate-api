@@ -12,7 +12,7 @@ function CandidateList({
   const getCandidates = async () => {
     try {
       const response = await fetch(
-        "http://127.0.0.1:8000/candidates"
+        "https://internship-candidate-api.onrender.com/candidates"
       );
 
       const data = await response.json();
@@ -45,7 +45,7 @@ function CandidateList({
 
     try {
       const response = await fetch(
-        `http://127.0.0.1:8000/candidates/${id}`,
+        `https://internship-candidate-api.onrender.com/candidates/${id}`,
         {
           method: "DELETE",
         }

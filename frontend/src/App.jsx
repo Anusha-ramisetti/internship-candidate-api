@@ -38,7 +38,7 @@ function App() {
   const getCandidates = async () => {
     try {
       const response = await fetch(
-        "http://127.0.0.1:8000/candidates"
+        "https://internship-candidate-api.onrender.com/candidates"
       );
 
       const data = await response.json();
@@ -117,7 +117,7 @@ function App() {
 
       if (editingId !== null) {
         response = await fetch(
-          `http://127.0.0.1:8000/candidates/${editingId}`,
+          `https://internship-candidate-api.onrender.com/candidates/${editingId}`,
           {
             method: "PUT",
             headers: {
