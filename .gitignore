@@ -1,0 +1,29 @@
+# Python virtual environment
+backend/venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# SQLite database
+backend/candidates.db
+
+# Node modules
+frontend/node_modules/
+
+# Vite build files
+frontend/dist/
+
+# Environment files
+.env
+*.env
+
+# Logs
+*.log
+
+# VS Code settings
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
